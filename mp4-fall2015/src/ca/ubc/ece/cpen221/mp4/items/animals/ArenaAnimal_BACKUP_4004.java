@@ -15,7 +15,7 @@ import ca.ubc.ece.cpen221.mp4.items.LivingItem;
  */
 public interface ArenaAnimal extends LivingItem {
 
-	/**
+    /**
 	 * Returns the limit of the {@link LivingItem}'s energy. The
 	 * {@link LivingItem}'s energy should never exceed this limit.
 	 *

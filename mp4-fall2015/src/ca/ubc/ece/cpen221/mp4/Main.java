@@ -34,6 +34,8 @@ public class Main {
 	static final int INITIAL_MANS = INITIAL_GRASS / 150;
 	static final int INITIAL_WOMANS = INITIAL_GRASS / 100;
 	static final int INITIAL_HUNTERS = INITIAL_GRASS / 150;
+	//additions
+	static final int INITIAL_OTTERS = INITIAL_GRASS / 32;
 
 	public static void main(String[] args) {
 		SwingUtilities.invokeLater(new Runnable() {
