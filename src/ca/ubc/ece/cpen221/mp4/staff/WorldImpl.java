@@ -30,7 +30,7 @@ public class WorldImpl implements World {
 
 	private final int width;
 	private final int height;
-
+	
 	private final Map<Actor, Integer> actorWait = new HashMap<Actor, Integer>();
 	private final Set<Item> items = new HashSet<Item>();
 	private final List<Actor> actors = new ArrayList<Actor>();

@@ -27,6 +27,8 @@ public class WorldPanel extends JPanel {
 
 	private final World world;
 	private final Timer timer;
+	
+	private int steps;
 
 	/**
 	 * Creates a panel drawn with the contents of the specified World.
@@ -75,6 +77,7 @@ public class WorldPanel extends JPanel {
 	 * {@link WorldPanel#stop()} is called.
 	 */
 	public void start() {
+	    steps = 0;
 		timer.start();
 	}
 
@@ -85,6 +88,7 @@ public class WorldPanel extends JPanel {
 	 */
 	public void stop() {
 		timer.stop();
+		System.out.println(steps);
 	}
 
 	/**
@@ -94,6 +98,7 @@ public class WorldPanel extends JPanel {
 	 */
 	public void step() {
 		world.step();
+		steps ++;
 		repaint();
 	}
 
