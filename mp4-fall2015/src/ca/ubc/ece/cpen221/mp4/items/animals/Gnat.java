@@ -104,7 +104,7 @@ public class Gnat implements LivingItem {
 
 	@Override
 	public int getEnergy() {
-		// doesn't every die, except when run over by a Vehicle
+		// doesn't ever die, except when run over by a Vehicle
 		return 100;
 	}
 

@@ -101,7 +101,7 @@ public final class Location {
 	 * @return distance away from <code>otherLocation</code>
 	 */
 	public int getDistance(Location otherLocation) {
-		return (Math.abs(this.getX() - otherLocation.getX()) + Math.abs(this.getY() - otherLocation.getY()));
+		return Math.max(Math.abs(this.getX() - otherLocation.getX()), Math.abs(this.getY() - otherLocation.getY()));
 	}
 
 }
